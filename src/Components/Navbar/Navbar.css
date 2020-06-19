@@ -61,3 +61,14 @@
 .logo {
   margin-left: 5px;
 }
+
+@media (max-width: 1060px) {
+  .navbaritems {
+    display: none;
+  }
+}
+@media (min-width: 1060px) {
+  .toolbartoggle {
+    display: none;
+  }
+}

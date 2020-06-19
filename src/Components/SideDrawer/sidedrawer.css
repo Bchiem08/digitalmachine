@@ -41,3 +41,9 @@
 .sidedrawer a:active {
   color: grey;
 }
+
+@media (min-width: 1061px;) {
+  .sidedrawer {
+    display: none;
+  }
+}

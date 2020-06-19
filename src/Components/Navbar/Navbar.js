@@ -7,7 +7,7 @@ export default class NavBar extends Component {
     return (
       <div className="navbar">
         <nav className="navbarnavigation">
-          <div>
+          <div className="toolbartoggle">
             <DrawerToggleButton click={this.props.drawerClickHandler} />
           </div>
           <img
