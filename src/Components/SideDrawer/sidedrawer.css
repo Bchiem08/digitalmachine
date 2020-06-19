@@ -42,7 +42,7 @@
   color: grey;
 }
 
-@media (min-width: 1061px;) {
+@media (min-width: 1061px) {
   .sidedrawer {
     display: none;
   }
