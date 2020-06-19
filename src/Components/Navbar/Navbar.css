@@ -1,0 +1,18 @@
+.navbar {
+  flex-direction: row;
+  display: flex;
+  background: #020b56;
+  height: 100px;
+  align-items: center;
+}
+
+.navbarlist {
+  list-style-type: none;
+}
+
+.navbaritems {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-style: fjalla one;
+}
