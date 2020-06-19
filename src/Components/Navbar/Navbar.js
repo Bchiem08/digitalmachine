@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./Navbar.css";
-
+import DrawerToggleButton from "../SideDrawer/drawertogglebutton";
 export default class NavBar extends Component {
   render() {
     const imagePath = process.env.PUBLIC_URL + "/photos";
     return (
       <div className="navbar">
         <nav className="navbarnavigation">
+          <div>
+            <DrawerToggleButton />
+          </div>
           <img
             src={imagePath + "/Digitalmachine.png"}
             alt="Digital Machine"
