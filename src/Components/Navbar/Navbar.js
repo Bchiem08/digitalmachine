@@ -8,7 +8,7 @@ export default class NavBar extends Component {
       <div className="navbar">
         <nav className="navbarnavigation">
           <div>
-            <DrawerToggleButton />
+            <DrawerToggleButton click={this.props.drawerClickHandler} />
           </div>
           <img
             src={imagePath + "/Digitalmachine.png"}
