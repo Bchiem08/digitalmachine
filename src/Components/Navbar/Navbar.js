@@ -3,40 +3,39 @@ import "./Navbar.css";
 
 export default class NavBar extends Component {
   render() {
+    const imagePath = process.env.PUBLIC_URL + "/photos";
     return (
-      <div>
-        <nav>
-          <ul className="navbar">
-            <li className="navbarlist">
-              <a href="Home" className="navbaritems">
-                Home
-              </a>
-            </li>
-            <div className="navbarline"></div>
-            <li className="navbarlist">
-              <a href="About" className="navbaritems">
-                About
-              </a>
-            </li>
-            <div className="navbarline"></div>
-            <li className="navbarlist">
-              <a href="Services" className="navbaritems">
-                Services
-              </a>
-            </li>
-            <div className="navbarline"></div>
-            <li className="navbarlist">
-              <a href="Photos" className="navbaritems">
-                Photos
-              </a>
-            </li>
-            <div className="navbarline"></div>
-            <li className="navbarlist">
-              <a href="Contact" className="navbaritems">
-                Contact
-              </a>
-            </li>
-          </ul>
+      <div className="navbar">
+        <nav className="navbarnavigation">
+          <img
+            src={imagePath + "/Digitalmachine.png"}
+            alt="Digital Machine"
+            className="logo"
+          ></img>
+          <div className="break"></div>
+          <div className="navbaritems">
+            <ul>
+              <li>
+                <a href="Home">Home</a>
+              </li>
+              <div className="navbarline"></div>
+              <li>
+                <a href="About">About</a>
+              </li>
+              <div className="navbarline"></div>
+              <li>
+                <a href="Services">Services</a>
+              </li>
+              <div className="navbarline"></div>
+              <li>
+                <a href="Photos">Photos</a>
+              </li>
+              <div className="navbarline"></div>
+              <li>
+                <a href="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     );

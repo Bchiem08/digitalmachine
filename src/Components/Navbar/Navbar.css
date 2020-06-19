@@ -1,11 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 .navbar {
-  flex-direction: row;
-  display: flex;
+  position: fixed;
   background: #020b56;
   height: 100px;
+  width: 100%;
+}
+
+.navbarnavigation {
+  display: flex;
+  height: 100%;
   align-items: center;
+  padding-left: 15px;
+}
+.navbaritems a {
+  text-decoration: none;
+  color: white;
+}
+.navbaritems ul {
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbaritems {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+
+.navbaritems li {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navbaritems a:hover,
+.navbaritems a:active {
+  text-decoration: none;
+  color: grey;
 }
 
 .navbarline {
@@ -15,14 +52,11 @@
 }
 
 .navbarlist {
-  list-style-type: none;
 }
 
-.navbaritems {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  font-family: "Fjalla One", sans-serif;
-  padding-left: 30px;
-  padding-right: 30px;
+.break {
+  flex: 1;
+}
+
+.logo {
 }
