@@ -20,17 +20,15 @@ export default class App extends Component {
   };
 
   render() {
-    let sideDrawer;
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
-      sideDrawer = <SideDrawer />;
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <div style={{ height: "100%" }}>
         <NavBar drawerClickHandler={this.drawerToggleClickHander} />
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
       </div>
     );
