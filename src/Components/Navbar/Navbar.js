@@ -12,22 +12,25 @@ export default class NavBar extends Component {
                 Home
               </a>
             </li>
+            <div className="navbarline"></div>
             <li className="navbarlist">
               <a href="About" className="navbaritems">
-                {" "}
                 About
               </a>
             </li>
+            <div className="navbarline"></div>
             <li className="navbarlist">
               <a href="Services" className="navbaritems">
                 Services
               </a>
             </li>
+            <div className="navbarline"></div>
             <li className="navbarlist">
               <a href="Photos" className="navbaritems">
                 Photos
               </a>
             </li>
+            <div className="navbarline"></div>
             <li className="navbarlist">
               <a href="Contact" className="navbaritems">
                 Contact

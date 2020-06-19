@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
 .navbar {
   flex-direction: row;
   display: flex;
   background: #020b56;
   height: 100px;
   align-items: center;
+}
+
+.navbarline {
+  width: 2px;
+  height: 50px;
+  background-color: white;
 }
 
 .navbarlist {
@@ -14,5 +22,7 @@
   text-decoration: none;
   color: white;
   font-size: 30px;
-  font-style: fjalla one;
+  font-family: "Fjalla One", sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
 }
