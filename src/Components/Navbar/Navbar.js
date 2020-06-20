@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import DrawerToggleButton from "../SideDrawer/drawertogglebutton";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
+
 export default class NavBar extends Component {
   render() {
     const imagePath = process.env.PUBLIC_URL + "/photos";
@@ -20,27 +21,23 @@ export default class NavBar extends Component {
           <div className="navbaritems">
             <ul>
               <li>
-                <Link to="/"> Home </Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <div className="navbarline"></div>
               <li>
-                <a>
-                  <Link to="">About</Link>
-                </a>
+                <a href="">About</a>
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="Services">Services</a>
+                <a href="">Services</a>
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="Photos">Photos</a>
+                <a href="">Photos</a>
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="Contact">
-                  <Link to="/contactpage">Contact</Link>
-                </a>
+                <Link to={"/contactus"}>Contact</Link>
               </li>
             </ul>
           </div>

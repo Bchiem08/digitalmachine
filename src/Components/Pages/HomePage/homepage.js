@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import "./homepage.css";
 import NavBarExport from "../../Navbar/NavbarExport";
-import Link from "@material-ui/core/Link";
+import Footer from "../../Footer/footer";
 
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <Link to="/contactus">
-          <NavBarExport />
-        </Link>
+        <NavBarExport />
+        <div style={{ marginTop: "100px" }}>
+          <header>Kobe</header>
+        </div>
+        <Footer />
       </div>
     );
   }
