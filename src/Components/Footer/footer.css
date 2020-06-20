@@ -1,11 +1,8 @@
 .footer {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
+  bottom: 0;
   background: #020b56;
   width: 100%;
   max-height: 900px;
-  vertical-align: baseline;
 }
 
 .footerinfobox {

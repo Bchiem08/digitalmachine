@@ -10,6 +10,7 @@ export default class HomePage extends Component {
         <NavBarExport />
         <div style={{ marginTop: "100px" }}>
           <header>Kobe</header>
+          <div style={{ height: "2000px" }}></div>
         </div>
         <Footer />
       </div>

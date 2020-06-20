@@ -11,11 +11,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <Grid
-          container
-          className="footerinfobox"
-          style={{ marginBottom: "20px" }}
-        >
+        <Grid container className="footerinfobox">
           <Grid item xs={12} sm={4} md={3} lg={3}>
             <ContactText />
           </Grid>
