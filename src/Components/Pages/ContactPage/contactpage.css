@@ -1,8 +1,14 @@
 .contactpage {
   background-image: url(../../../Backgrounds/contactbackground.png);
   width: 100%;
+  height: 92vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   resize: stretch;
+  margin-top: 100px;
+}
+
+.contactpagecontent {
+  margin-left: 15%;
 }
