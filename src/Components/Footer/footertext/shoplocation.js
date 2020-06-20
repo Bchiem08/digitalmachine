@@ -4,7 +4,7 @@ import "./footertext.css";
 export default class ShopLocationText extends Component {
   render() {
     return (
-      <div>
+      <div className="footerbox">
         <header className="headertext">Shop Location</header>
         <header className="footertitle">Address</header>
         <p className="footerinfo">5303 36 St NW, </p>

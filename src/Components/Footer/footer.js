@@ -3,6 +3,8 @@ import "./footer.css";
 import Grid from "@material-ui/core/Grid";
 import ContactText from "./footertext/contact";
 import ShopLocationText from "./footertext/shoplocation";
+import ServiceAreaText from "./footertext/servicearea";
+import StoreHourText from "./footertext/storehours";
 
 export default class Footer extends Component {
   render() {
@@ -15,8 +17,12 @@ export default class Footer extends Component {
           <Grid item>
             <ShopLocationText />
           </Grid>
-          <Grid item></Grid>
-          <Grid item></Grid>
+          <Grid item>
+            <ServiceAreaText />
+          </Grid>
+          <Grid item>
+            <StoreHourText />
+          </Grid>
         </Grid>
       </div>
     );

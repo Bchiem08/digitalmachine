@@ -3,11 +3,11 @@
   bottom: 0;
   background: #020b56;
   width: 100%;
-  height: 300px;
+  max-height: 1000px;
 }
 
 .footerinfobox {
-  margin-top: 3%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
