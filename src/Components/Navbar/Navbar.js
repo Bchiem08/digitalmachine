@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 import DrawerToggleButton from "../SideDrawer/drawertogglebutton";
+import Link from "@material-ui/core/Link";
 export default class NavBar extends Component {
   render() {
     const imagePath = process.env.PUBLIC_URL + "/photos";
@@ -19,11 +20,13 @@ export default class NavBar extends Component {
           <div className="navbaritems">
             <ul>
               <li>
-                <a href="Home">Home</a>
+                <Link to="/"> Home </Link>
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="About">About</a>
+                <a>
+                  <Link to="">About</Link>
+                </a>
               </li>
               <div className="navbarline"></div>
               <li>
@@ -35,7 +38,9 @@ export default class NavBar extends Component {
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="Contact">Contact</a>
+                <a href="Contact">
+                  <Link to="/contactpage">Contact</Link>
+                </a>
               </li>
             </ul>
           </div>

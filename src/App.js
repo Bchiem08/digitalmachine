@@ -1,38 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
-import NavBar from "./Components/Navbar/Navbar";
-import SideDrawer from "./Components/SideDrawer/sidedrawer";
-import Backdrop from "./Components/Backdrop/backdrop";
-import Footer from "./Components/Footer/footer";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomePage from "./Components/Pages/HomePage/homepage";
+import ContactPage from "./Components/Pages/ContactPage/contactpage";
 
 export default class App extends Component {
-  state = {
-    sideDrawerOpen: false,
-  };
-
-  drawerToggleClickHander = () => {
-    this.setState((prevState) => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
-  };
-
-  backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false });
-  };
-
   render() {
-    let backdrop;
-
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />;
-    }
     return (
-      <div style={{ height: "100%" }}>
-        <NavBar drawerClickHandler={this.drawerToggleClickHander} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
-        <div style={{ height: "1000px" }}></div>
-        <Footer />
+      <div>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" component={HomePage} />
+            <Route path="/contactus" component={ContactPage} />
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }

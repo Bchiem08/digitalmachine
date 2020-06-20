@@ -1,0 +1,8 @@
+.contactpage {
+  background-image: url(../../../Backgrounds/contactbackground.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  resize: stretch;
+}
