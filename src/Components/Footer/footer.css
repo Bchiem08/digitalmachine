@@ -1,0 +1,13 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: #020b56;
+  width: 100%;
+  height: 300px;
+}
+
+.footerinfobox {
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+}

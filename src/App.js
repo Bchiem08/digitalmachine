@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./Components/Navbar/Navbar";
 import SideDrawer from "./Components/SideDrawer/sidedrawer";
 import Backdrop from "./Components/Backdrop/backdrop";
+import Footer from "./Components/Footer/footer";
 
 export default class App extends Component {
   state = {
@@ -30,6 +31,7 @@ export default class App extends Component {
         <NavBar drawerClickHandler={this.drawerToggleClickHander} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+        <Footer />
       </div>
     );
   }
