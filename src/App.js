@@ -31,6 +31,7 @@ export default class App extends Component {
         <NavBar drawerClickHandler={this.drawerToggleClickHander} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+        <div style={{ height: "1000px" }}></div>
         <Footer />
       </div>
     );
