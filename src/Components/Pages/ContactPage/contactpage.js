@@ -5,6 +5,7 @@ import Footer from "../../Footer/footer";
 import ContactPageText from "./contactpagetext";
 import Grid from "@material-ui/core/Grid";
 import ContactForm from "./contactform";
+import DigitalMachineMap from "../../Map/map";
 export default class ContactPage extends Component {
   render() {
     return (
