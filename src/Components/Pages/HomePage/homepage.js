@@ -9,6 +9,7 @@ export default class HomePage extends Component {
       <div>
         <NavBarExport />
         <div className="homepage">
+          <div></div>
           <header>Kobe</header>
           <div style={{ height: "2000px" }}></div>
         </div>
