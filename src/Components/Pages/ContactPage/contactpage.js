@@ -12,6 +12,7 @@ export default class ContactPage extends Component {
       <div>
         <NavBarExport />
         <div className="contactpage">
+          <div className="mask"></div>
           <Grid container>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <ContactPageText />
@@ -21,6 +22,9 @@ export default class ContactPage extends Component {
             </Grid>
           </Grid>
           <div style={{ height: "75px" }}></div>
+        </div>
+        <div>
+          <DigitalMachineMap />
         </div>
         <Footer />
       </div>
