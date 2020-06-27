@@ -25,7 +25,7 @@ export default class NavBar extends Component {
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="">About</a>
+                <Link to={"/aboutus"}>About</Link>
               </li>
               <div className="navbarline"></div>
               <li>
@@ -33,7 +33,7 @@ export default class NavBar extends Component {
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="">Photos</a>
+                <Link to={"/photos"}>Photos</Link>
               </li>
               <div className="navbarline"></div>
               <li>
