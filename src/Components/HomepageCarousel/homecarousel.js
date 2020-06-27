@@ -7,14 +7,17 @@ const photos = [
   {
     name: "photo 1",
     url: "Photos/building.png",
+    alt: "Building",
   },
   {
     name: "photo 2",
     url: "Photos/building.png",
+    alt: "Buildingd",
   },
   {
     name: "photo 3",
     url: "Photos/building.png",
+    alt: "Buildings",
   },
 ];
 
@@ -36,7 +39,7 @@ export default class HomeCarousel extends Component {
           {photos.map((photos) => {
             return (
               <div>
-                <img width="100%" src={photos.url} />
+                <img width="100%" src={photos.url} alt="Map" />
               </div>
             );
           })}
