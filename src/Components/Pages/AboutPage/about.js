@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid";
 import "./about.css";
 import AboutUsText from "./aboutus/aboutustext";
 import Quality from "./aboutus/quality";
+import Service from "./aboutus/service";
 
 export default class AboutPage extends Component {
   render() {
@@ -18,6 +19,7 @@ export default class AboutPage extends Component {
           </Grid>
           <Grid>
             <Quality />
+            <Service />
           </Grid>
         </Grid>
         <Footer />

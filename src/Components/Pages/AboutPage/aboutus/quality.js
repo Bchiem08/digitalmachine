@@ -7,7 +7,7 @@ export default class Quality extends Component {
     const imagePath = process.env.PUBLIC_URL + "/photos";
 
     return (
-      <div>
+      <div style={{ marginBottom: "50px" }}>
         <Grid container>
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
             <div style={{ marginLeft: "12%", marginTop: "150px" }}>
