@@ -13,6 +13,8 @@ export default class AboutUsText extends Component {
           production machine shop with CNC turning and milling centers, various
           manual operated equipment, and a 20 ton crane lift capability.
         </p>
+        <div style={{ height: "50px" }} />
+        <div className="aboutline"></div>
       </div>
     );
   }
