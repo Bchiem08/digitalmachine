@@ -29,7 +29,7 @@ export default class NavBar extends Component {
               </li>
               <div className="navbarline"></div>
               <li>
-                <a href="">Services</a>
+                <Link to={"/services"}>Services</Link>
               </li>
               <div className="navbarline"></div>
               <li>

@@ -88,7 +88,7 @@ export default class ContactForm extends Component {
           </div>
           <div className="form-group">
             <label htmlFor="message">Message</label>
-            <input
+            <textarea
               type="text"
               className="form-area"
               rows="5"
