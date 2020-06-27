@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.about-textbox {
+  margin-top: 75px;
+  text-align: center;
+  margin-bottom: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutheader {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+}
+
+.about-text {
+  font-family: "Open Sans";
+  font-size: 30px;
+}
