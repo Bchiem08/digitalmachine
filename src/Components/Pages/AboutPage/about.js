@@ -6,6 +6,7 @@ import "./about.css";
 import AboutUsText from "./aboutus/aboutustext";
 import Quality from "./aboutus/quality";
 import Service from "./aboutus/service";
+import ContactFooter from "../../contactusfooter/contactfooter";
 
 export default class AboutPage extends Component {
   render() {
@@ -21,6 +22,8 @@ export default class AboutPage extends Component {
             <Quality />
             <Service />
           </Grid>
+
+          <ContactFooter />
         </Grid>
         <Footer />
       </div>

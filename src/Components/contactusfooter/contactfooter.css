@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.background {
+  background-image: url(../../Backgrounds/contactusfooter.png);
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+  width: 100%;
+  align-self: center;
+}
+
+.contactheader {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+.contact-text {
+  font-family: "Open Sans";
+  font-size: 30px;
+  color: white;
+}
+
+.contact-box {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-button {
+  background-color: #020b56;
+  width: 150px;
+  height: 40px;
+  border-width: 0.05px;
+  border-radius: 5px;
+  border-color: white;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #020b56;
+  border-color: #020b56;
+  border-width: 0.5px;
+}
