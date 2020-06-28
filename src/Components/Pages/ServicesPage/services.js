@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavbarExport from "../../Navbar/NavbarExport";
 import Footer from "../../Footer/footer";
 import "./services.css";
+import CardGrid from "./MachineCards/cardgrid";
 
 export default class ServicesPage extends Component {
   render() {
@@ -18,7 +19,16 @@ export default class ServicesPage extends Component {
           </p>
         </div>
         <div className="service-image" />
-
+        <div className="machineinfobox">
+          <header className="machineinfo">Machine Information</header>
+          <p className="machineinfotext">
+            At Digital Machine we have a wide range of machines that we use to
+            provide the highest quality products.
+          </p>
+        </div>
+        <div className="gridholder">
+          <CardGrid />
+        </div>
         <Footer />
       </div>
     );
