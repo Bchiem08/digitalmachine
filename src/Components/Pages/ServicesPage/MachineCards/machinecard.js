@@ -9,10 +9,10 @@ export default function MachineCard(props) {
   return (
     <Card className="machinecard">
       <CardMedia className="media" image={props.image}>
-        <CardContent>
+        <CardContent className="textbox">
           <Typography
-            variant="h3"
-            className="machinecardtext"
+            variant="h4"
+            className="machinecardtitle"
             style={{ fontFamily: "Fjalla One" }}
           >
             {props.name}
@@ -22,6 +22,7 @@ export default function MachineCard(props) {
             className="machinecardtext"
             style={{ fontFamily: "Fjalla One" }}
           >
+            <div style={{ height: "40px" }} />
             {props.axis}
           </Typography>
           <Typography
@@ -30,6 +31,13 @@ export default function MachineCard(props) {
             style={{ fontFamily: "Fjalla One" }}
           >
             {props.length}
+          </Typography>
+          <Typography
+            variant="h5"
+            className="machinecardtext"
+            style={{ fontFamily: "Fjalla One" }}
+          >
+            {props.rpm}
           </Typography>
           <Typography
             variant="h5"
