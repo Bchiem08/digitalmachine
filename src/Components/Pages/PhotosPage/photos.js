@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import NavbarExport from "../../Navbar/NavbarExport";
 import Footer from "../../Footer/footer";
 import "./photos.css";
+import "./Gallery/gallery";
+import Gallery from "./Gallery/gallery";
 
 export default class PhotosPage extends Component {
   render() {
@@ -12,6 +14,7 @@ export default class PhotosPage extends Component {
           <div className="photos-headerbox">
             <header className="photos-header">Photos</header>
           </div>
+          <Gallery />
         </div>
         <Footer />
       </div>

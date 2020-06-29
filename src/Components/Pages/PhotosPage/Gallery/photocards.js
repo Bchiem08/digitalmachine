@@ -7,10 +7,16 @@ import "./photocards.css";
 
 export default function PhotoCard(props) {
   return (
-    <Card>
-      <CardMedia>
+    <Card class="photocard">
+      <CardMedia className="photos" image={props.image}>
         <CardContent>
-          <Typography>Hi</Typography>
+          <Typography
+            variant="h6"
+            className="caption"
+            style={{ fontFamily: "Open Sans" }}
+          >
+            {props.caption}
+          </Typography>
         </CardContent>
       </CardMedia>
     </Card>
