@@ -61,7 +61,7 @@ export default class CardGrid extends Component {
         }}
       >
         {cards.map((cards, index) => (
-          <Grid xs={12} sm={12} md={6} lg={6} xl={6} className="cardgrid">
+          <Grid xs={12} sm={12} md={6} lg={6} xl={4} className="cardgrid">
             <MachineCard
               key={"card" + index}
               image={cards.image}

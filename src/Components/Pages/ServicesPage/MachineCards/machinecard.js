@@ -20,7 +20,7 @@ export default function MachineCard(props) {
           <Typography
             variant="h5"
             className="machinecardtext"
-            style={{ fontFamily: "Fjalla One" }}
+            style={{ fontFamily: "Open Sans" }}
           >
             <div style={{ height: "40px" }} />
             {props.axis}
@@ -28,21 +28,21 @@ export default function MachineCard(props) {
           <Typography
             variant="h5"
             className="machinecardtext"
-            style={{ fontFamily: "Fjalla One" }}
+            style={{ fontFamily: "Open Sans" }}
           >
             {props.length}
           </Typography>
           <Typography
             variant="h5"
             className="machinecardtext"
-            style={{ fontFamily: "Fjalla One" }}
+            style={{ fontFamily: "Open Sans" }}
           >
             {props.rpm}
           </Typography>
           <Typography
             variant="h5"
             className="machinecardtext"
-            style={{ fontFamily: "Fjalla One" }}
+            style={{ fontFamily: "Open Sans" }}
           >
             {props.control}
           </Typography>
