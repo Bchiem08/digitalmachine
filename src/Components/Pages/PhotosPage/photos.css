@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.photospage-background {
+  background-image: url(../../../Backgrounds/nutsscreened.png);
+  width: 100%;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+  width: 100%;
+  align-self: center;
+}
+
+.photos-header {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+.photos-headerbox {
+  padding-top: 100px;
+  margin-left: 11%;
+}
