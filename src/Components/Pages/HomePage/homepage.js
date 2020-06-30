@@ -5,6 +5,7 @@ import Footer from "../../Footer/footer";
 import HomeCarousel from "../../HomepageCarousel/homecarousel";
 import MachiningNeeds from "./Homepagesections/machiningneeds";
 import WhyChoose from "./Homepagesections/whychoose";
+import OurShop from "./Homepagesections/ourshop";
 export default class HomePage extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ export default class HomePage extends Component {
           </div>
           <MachiningNeeds />
           <WhyChoose />
+          <OurShop />
         </div>
         <Footer />
       </div>
