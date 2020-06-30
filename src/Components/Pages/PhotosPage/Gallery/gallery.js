@@ -16,7 +16,7 @@ export default class Gallery extends Component {
         }}
       >
         {photos.map((photo, index) => (
-          <Grid xs={12} sm={12} md={6} lg={6} xl={4}>
+          <Grid xs={12} sm={6} md={6} lg={4} xl={4}>
             <PhotoCard
               key={"card" + index}
               image={photo.image}

@@ -10,11 +10,7 @@ export default function PhotoCard(props) {
     <Card class="photocard">
       <CardMedia className="photos" image={props.image}>
         <CardContent>
-          <Typography
-            variant="h6"
-            className="caption"
-            style={{ fontFamily: "Open Sans" }}
-          >
+          <Typography className="caption" style={{ fontFamily: "Open Sans" }}>
             {props.caption}
           </Typography>
         </CardContent>

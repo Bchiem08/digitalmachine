@@ -15,6 +15,7 @@ export default class PhotosPage extends Component {
             <header className="photos-header">Photos</header>
           </div>
           <Gallery />
+          <div style={{ height: "200px" }} />
         </div>
         <Footer />
       </div>

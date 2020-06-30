@@ -1,20 +1,21 @@
 .photocard {
-  max-width: 600px;
+  max-width: 500px;
   height: 350px;
   border-color: white;
   background-color: white;
   margin-right: 40px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .photos {
   width: 100%;
-  height: 90%;
+  height: 93%;
 }
 
 .caption {
   font-family: "Open Sans";
-  font-size: 30px;
+  font-size: 12px;
   color: black;
-  padding-top: 300px;
+  padding-top: 309px;
 }
