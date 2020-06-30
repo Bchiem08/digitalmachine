@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import "./contactfooter.css";
+import "./contactfooter2.css";
 import { Link } from "react-router-dom";
 
-export default class ContactFooter extends Component {
+export default class ContactFooter2 extends Component {
   render() {
     return (
       <div className="background">
