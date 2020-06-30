@@ -13,26 +13,26 @@
   align-self: center;
 }
 
-.contactheader {
+.contactheader2 {
   font-family: "Fjalla One", sans-serif;
   font-size: 50px;
   color: white;
 }
 
-.contact-text {
+.contact-text2 {
   font-family: "Open Sans";
   font-size: 30px;
   color: white;
 }
 
-.contactfooter-box {
+.contactfooter2-box {
   padding-top: 100px;
   margin-top: 100px;
   width: 100%;
   text-align: center;
 }
 
-.contact-button {
+.contact2-button {
   background-color: #020b56;
   width: 150px;
   height: 40px;
@@ -45,7 +45,7 @@
   transition-duration: 0.5s;
 }
 
-.contact-button:hover {
+.contact2-button:hover {
   background-color: white;
   color: #020b56;
   border-color: #020b56;

@@ -11,7 +11,7 @@ export default class Service extends Component {
         <Grid container>
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
             <img
-              src={imagePath + "/service.png"}
+              src={imagePath + "/service2.png"}
               alt="service"
               className="image"
             ></img>

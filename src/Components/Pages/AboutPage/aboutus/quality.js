@@ -23,7 +23,7 @@ export default class Quality extends Component {
           </Grid>
           <Grid item xs={0} sm={0} md={6} lg={6} xl={6}>
             <img
-              src={imagePath + "/quality.png"}
+              src={imagePath + "/quality2.png"}
               alt="quality"
               className="image"
             ></img>
