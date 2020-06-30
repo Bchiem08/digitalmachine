@@ -35,6 +35,13 @@ export default class ContactForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state);
+    this.setState({
+      Firstname: "",
+      Lastname: "",
+      email: "",
+      phonenumber: "",
+      message: "",
+    });
   }
 
   render() {
@@ -97,7 +104,11 @@ export default class ContactForm extends Component {
               required
             />
           </div>
-          <button type="submit" className="submitbutton">
+          <button
+            type="submit"
+            className="submitbutton"
+            onSubmit={this.handleSubmit.bind(this)}
+          >
             Submit
           </button>
         </form>
