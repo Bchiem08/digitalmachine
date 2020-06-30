@@ -2,24 +2,7 @@ import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
-const photos = [
-  {
-    name: "photo 1",
-    url: "Photos/building.png",
-    alt: "Building",
-  },
-  {
-    name: "photo 2",
-    url: "Photos/building.png",
-    alt: "Buildingd",
-  },
-  {
-    name: "photo 3",
-    url: "Photos/building.png",
-    alt: "Buildings",
-  },
-];
+import { photos } from "./carouseldata";
 
 export default class HomeCarousel extends Component {
   render() {
@@ -36,10 +19,10 @@ export default class HomeCarousel extends Component {
     return (
       <div>
         <Slider {...settings}>
-          {photos.map((photos) => {
+          {photos.map((photo) => {
             return (
               <div>
-                <img width="100%" src={photos.url} alt="Map" />
+                <img width="100%" src={photo.url} alt="Map" />
               </div>
             );
           })}
