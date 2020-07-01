@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contactform.css";
-
+import sendContactMessage from "./sendbird/send-mail";
+import axios from "axios";
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -35,6 +36,22 @@ export default class ContactForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log(this.state);
+    // sendContactMessage("Hello").then().catch();
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/contactus",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  }
+
+  resetForm() {
     this.setState({
       Firstname: "",
       Lastname: "",
@@ -104,11 +121,7 @@ export default class ContactForm extends Component {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="submitbutton"
-            onSubmit={this.handleSubmit.bind(this)}
-          >
+          <button type="submit" className="submitbutton">
             Submit
           </button>
         </form>

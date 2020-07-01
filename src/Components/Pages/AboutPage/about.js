@@ -18,11 +18,10 @@ export default class AboutPage extends Component {
           <Grid item>
             <AboutUsText />
           </Grid>
-          <Grid>
+          <Grid item>
             <Quality />
             <Service />
           </Grid>
-
           <ContactFooter />
         </Grid>
         <Footer />

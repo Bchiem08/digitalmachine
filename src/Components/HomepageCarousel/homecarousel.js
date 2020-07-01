@@ -21,7 +21,7 @@ export default class HomeCarousel extends Component {
         <Slider {...settings}>
           {photos.map((photo) => {
             return (
-              <div>
+              <div key={photo}>
                 <img width="100%" src={photo.url} alt="map" />
               </div>
             );
