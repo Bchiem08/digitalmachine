@@ -33,25 +33,24 @@ export default class ContactForm extends Component {
     this.setState({ message: event.target.value });
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  handleSubmit(e) {
+    e.preventDefault();
     console.log(this.state);
-    // sendContactMessage("Hello").then().catch();
-    axios({
-      method: "POST",
-      url: "http://localhost:3002/contactus",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
-    });
-  }
-
-  resetForm() {
+    axios
+      .post({
+        method: "POST",
+        url:
+          "https://us-central1-digitalmachineltd-95928.cloudfunctions.net/helloWorld",
+        data: this.state,
+      })
+      .then((response) => {
+        if (response.data.status === "success") {
+          alert("Message Sent.");
+          this.resetForm();
+        } else if (response.data.status === "fail") {
+          alert("Message failed to send.");
+        }
+      });
     this.setState({
       Firstname: "",
       Lastname: "",
@@ -76,6 +75,7 @@ export default class ContactForm extends Component {
               className="form-name"
               value={this.state.Firstname}
               onChange={this.onFirstnameChange.bind(this)}
+              name="FirstName"
               required
             />
           </div>
@@ -86,6 +86,7 @@ export default class ContactForm extends Component {
               className="form-name"
               value={this.state.Lastname}
               onChange={this.onLastnameChange.bind(this)}
+              name="LastName"
               required
             />
           </div>
@@ -97,6 +98,7 @@ export default class ContactForm extends Component {
               aria-describedby="emailHelp"
               value={this.state.email}
               onChange={this.onEmailChange.bind(this)}
+              name="email"
               required
             />
           </div>
@@ -108,6 +110,7 @@ export default class ContactForm extends Component {
               className="form-name"
               value={this.state.phonenumber}
               onChange={this.onPhoneNumberChange.bind(this)}
+              name="phonenumber"
             />
           </div>
           <div className="form-group">
@@ -118,6 +121,7 @@ export default class ContactForm extends Component {
               rows="5"
               value={this.state.message}
               onChange={this.onMessageChange.bind(this)}
+              name="message"
               required
             />
           </div>
