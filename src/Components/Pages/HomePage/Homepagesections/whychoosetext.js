@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./homepagesections.css";
+import { Link } from "react-router-dom";
 
 export default class WhyChooseText extends Component {
   render() {
@@ -17,7 +18,9 @@ export default class WhyChooseText extends Component {
         <p className="subtext">
           we pride ourselves in providing the best quality to our clients.
         </p>
-        <button className="homepage-button">Learn more</button>
+        <Link to={"/aboutus"}>
+          <button className="homepage-button">Learn more</button>
+        </Link>
       </div>
     );
   }

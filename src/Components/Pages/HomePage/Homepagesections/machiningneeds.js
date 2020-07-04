@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./homepagesections.css";
+import { Link } from "react-router-dom";
 
 export default class MachiningNeeds extends Component {
   render() {
@@ -16,7 +17,9 @@ export default class MachiningNeeds extends Component {
           best quality.
         </p>
         <div style={{ height: "40px" }} />
-        <button className="homepage-button">Contact Us</button>
+        <Link to={"/contactus"}>
+          <button className="homepage-button">Contact Us</button>
+        </Link>
         <div style={{ height: "50px" }} />
       </div>
     );
