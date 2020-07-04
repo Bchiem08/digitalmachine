@@ -7,12 +7,14 @@ import ContactPage from "./Components/Pages/ContactPage/contactpage";
 import ServicesPage from "./Components/Pages/ServicesPage/services";
 import AboutPage from "./Components/Pages/AboutPage/about";
 import PhotosPage from "./Components/Pages/PhotosPage/photos";
+import ScrollToTop from "./Components/scroll/scrolltotop";
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <Router>
+          <ScrollToTop />
           <Switch>
             <Route exact path={"/"} component={HomePage} />
             <Route path={"/contactus"} component={ContactPage} />
