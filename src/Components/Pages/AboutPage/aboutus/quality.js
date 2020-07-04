@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./aboutustext.css";
 import Grid from "@material-ui/core/Grid";
+import Hidden from "@material-ui/core/Hidden";
 
 export default class Quality extends Component {
   render() {
@@ -21,13 +22,15 @@ export default class Quality extends Component {
               </p>
             </div>
           </Grid>
-          <Grid item xs={0} sm={0} md={6} lg={6} xl={6}>
-            <img
-              src={imagePath + "/quality2.png"}
-              alt="quality"
-              className="image"
-            ></img>
-          </Grid>
+          <Hidden smDown>
+            <Grid item xs={0} sm={0} md={6} lg={6} xl={6}>
+              <img
+                src={imagePath + "/quality2.png"}
+                alt="quality"
+                className="image"
+              ></img>
+            </Grid>
+          </Hidden>
         </Grid>
       </div>
     );
