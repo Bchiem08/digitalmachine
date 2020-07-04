@@ -4,9 +4,12 @@ import SideDrawer from "../SideDrawer/sidedrawer";
 import Backdrop from "../Backdrop/backdrop";
 
 export default class NavBarExport extends Component {
-  state = {
-    sideDrawerOpen: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      sideDrawerOpen: false,
+    };
+  }
 
   drawerToggleClickHander = () => {
     this.setState((prevState) => {

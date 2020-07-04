@@ -113,7 +113,11 @@ export default class ContactForm extends Component {
               required
             />
           </div>
-          <button type="submit" className="submitbutton">
+          <button
+            type="submit"
+            className="submitbutton"
+            onSubmit={this.handleSubmit.bind(this)}
+          >
             Submit
           </button>
         </form>
