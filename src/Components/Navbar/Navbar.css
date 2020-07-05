@@ -61,12 +61,12 @@
   margin-left: 5px;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1059px) {
   .navbaritems {
     display: none;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 1059px) {
   .toolbartoggle {
     display: none;
   }
