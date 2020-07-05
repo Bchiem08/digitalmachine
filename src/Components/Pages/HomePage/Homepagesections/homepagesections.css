@@ -60,3 +60,33 @@
   margin-right: 11%;
   width: 80%;
 }
+
+@media (max-width: 1059px) {
+  .homepage-header {
+    font-size: 40px;
+  }
+  .homepage-text {
+    font-size: 24px;
+  }
+  .subheader {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .homepage-header {
+    font-size: 24px;
+  }
+  .homepage-text {
+    font-size: 18px;
+  }
+  .subheader {
+    font-size: 24px;
+  }
+  .subtext {
+    font-size: 18px;
+  }
+}

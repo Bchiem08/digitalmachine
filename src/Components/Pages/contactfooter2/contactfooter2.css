@@ -51,3 +51,38 @@
   border-color: #020b56;
   border-width: 0.5px;
 }
+
+@media (max-width: 1059px) {
+  .contactfooter2-box {
+    height: 300px;
+  }
+  .contactheader2 {
+    font-size: 40px;
+  }
+
+  .contact-text2 {
+    font-size: 24px;
+  }
+
+  .contact2-button {
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .contactfooter2-box {
+    height: 200px;
+  }
+  .contactheader2 {
+    font-size: 30px;
+  }
+  .contact-text2 {
+    font-size: 22px;
+  }
+  .contact2-button {
+    height: 25px;
+    width: 100px;
+    font-size: 14px;
+  }
+}

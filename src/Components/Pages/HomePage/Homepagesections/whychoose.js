@@ -7,7 +7,7 @@ export default class WhyChoose extends Component {
   render() {
     const imagePath = process.env.PUBLIC_URL + "/photos";
     return (
-      <div style={{ backgroundColor: "#E5E5E5" }}>
+      <div style={{ backgroundColor: "#E5E5E5", width: "100%" }}>
         <div className="box" style={{ marginTop: "55px" }}>
           <div style={{ height: "70px" }} />
           <Grid container>
