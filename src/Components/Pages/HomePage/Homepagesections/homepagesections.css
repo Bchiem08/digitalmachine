@@ -64,6 +64,12 @@
   margin-left: 11%;
   margin-top: 4%;
 }
+@media (max-width: 1280px) {
+  .whychoose {
+    margin-left: 0%;
+    margin-top: 4%;
+  }
+}
 
 @media (max-width: 1059px) {
   .homepage-header {
