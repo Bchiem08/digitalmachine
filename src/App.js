@@ -12,9 +12,8 @@ import ScrollToTop from "./Components/scroll/scrolltotop";
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <ScrollToTop />
+      <Router>
+        <ScrollToTop>
           <Switch>
             <Route exact path={"/"} component={HomePage} />
             <Route path={"/contactus"} component={ContactPage} />
@@ -22,8 +21,8 @@ export default class App extends Component {
             <Route path={"/aboutus"} component={AboutPage} />
             <Route path={"/photos"} component={PhotosPage} />
           </Switch>
-        </Router>
-      </div>
+        </ScrollToTop>
+      </Router>
     );
   }
 }

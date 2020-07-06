@@ -23,7 +23,7 @@ export default class Quality extends Component {
             </div>
           </Grid>
           <Hidden smDown>
-            <Grid item xs={0} sm={0} md={6} lg={6} xl={6}>
+            <Grid item md={6} lg={6} xl={6}>
               <img
                 src={imagePath + "/quality2.png"}
                 alt="quality"

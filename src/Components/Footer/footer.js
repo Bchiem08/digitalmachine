@@ -12,20 +12,20 @@ export default class Footer extends Component {
     return (
       <div className="footer">
         <Grid container className="footerinfobox">
-          <Grid item xs={12} sm={4} md={3} lg={3}>
+          <Grid item xs={12} sm={4} md={3} lg={3} xl={3}>
             <ContactText />
           </Grid>
           <Hidden smDown>
-            <Grid item xs={12} sm={4} md={3} lg={3}>
+            <Grid item xs={12} sm={4} md={3} lg={3} xl={3}>
               <ShopLocationText />
             </Grid>
           </Hidden>
           <Hidden mdDown>
-            <Grid item xs={0} sm={0} md={3} lg={3}>
+            <Grid item md={3} lg={3} xl={3}>
               <ServiceAreaText />
             </Grid>
           </Hidden>
-          <Grid item xs={12} sm={4} md={3} lg={3}>
+          <Grid item xs={12} sm={4} md={3} lg={3} xl={3}>
             <StoreHourText />
           </Grid>
         </Grid>
