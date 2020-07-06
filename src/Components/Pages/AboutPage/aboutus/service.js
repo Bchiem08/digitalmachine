@@ -17,7 +17,7 @@ export default class Service extends Component {
             ></img>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-            <div style={{ marginLeft: "12%", marginTop: "150px" }}>
+            <div className="description-text">
               <header className="aboutheader">Service</header>
               <div className="textline" />
               <p className="about-text" style={{ maxWidth: "80%" }}>
