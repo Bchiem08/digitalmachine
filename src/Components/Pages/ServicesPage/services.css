@@ -76,3 +76,39 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1059px) {
+  .service-headerimage {
+    margin-top: 75px;
+  }
+  .service-header {
+    font-size: 40px;
+  }
+  .machineinfo {
+    font-size: 40px;
+  }
+  .service-text {
+    font-size: 24px;
+  }
+  .machineinfotext {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .service-headerimage {
+    margin-top: 50px;
+  }
+  .service-header {
+    font-size: 30px;
+  }
+  .machineinfo {
+    font-size: 30px;
+  }
+  .service-text {
+    font-size: 18px;
+  }
+  .machineinfotext {
+    font-size: 18px;
+  }
+}
