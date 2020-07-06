@@ -16,11 +16,11 @@ export default class MachiningNeeds extends Component {
           management system is established to ensure our clients only get the
           best quality.
         </p>
-        <div style={{ height: "40px" }} />
+        <div style={{ height: "2%" }} />
         <Link to={"/contactus"}>
           <button className="homepage-button">Contact Us</button>
         </Link>
-        <div style={{ height: "50px" }} />
+        <div style={{ height: "3%" }} />
       </div>
     );
   }

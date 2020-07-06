@@ -8,8 +8,8 @@ export default class WhyChoose extends Component {
     const imagePath = process.env.PUBLIC_URL + "/photos";
     return (
       <div style={{ backgroundColor: "#E5E5E5", width: "100%" }}>
-        <div className="box" style={{ marginTop: "55px" }}>
-          <div style={{ height: "70px" }} />
+        <div className="box" style={{ marginTop: "100px" }}>
+          <div style={{ height: "40px" }} />
           <Grid container>
             <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
               <header

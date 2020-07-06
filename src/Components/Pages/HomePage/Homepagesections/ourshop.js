@@ -8,7 +8,7 @@ export default class OurShop extends Component {
     return (
       <div>
         <div className="box">
-          <div style={{ height: "75px" }} />
+          <div style={{ height: "40px" }} />
           <header className="homepage-header">Our Shop</header>
           <div />
           <p className="homepage-text">
@@ -22,7 +22,6 @@ export default class OurShop extends Component {
           alt="shop"
           className="ourshop-image"
         ></img>
-        <div style={{ height: "100px" }} />
       </div>
     );
   }

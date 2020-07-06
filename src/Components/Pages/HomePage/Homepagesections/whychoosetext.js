@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default class WhyChooseText extends Component {
   render() {
     return (
-      <div style={{ marginLeft: "11%", marginTop: "72px" }}>
+      <div className="whychoose">
         <header className="subheader">Quality</header>
         <p className="subtext">
           we pride ourselves in providing the best quality to our clients.

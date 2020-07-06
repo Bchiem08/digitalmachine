@@ -14,7 +14,7 @@ export default class HomePage extends Component {
       <div>
         <NavBarExport />
         <div className="homepage">
-          <div style={{ marginBottom: "100px" }}>
+          <div style={{ paddingBottom: "6%" }}>
             <HomeCarousel />
           </div>
           <MachiningNeeds />
