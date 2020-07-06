@@ -50,3 +50,38 @@
   border-color: #020b56;
   border-width: 0.5px;
 }
+
+@media (max-width: 1059px) {
+  .contactfooter-box {
+    height: 300px;
+  }
+  .contactheader {
+    font-size: 40px;
+  }
+
+  .contact-text {
+    font-size: 24px;
+  }
+
+  .contact-button {
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .contactfooter-box {
+    height: 200px;
+  }
+  .contactheader {
+    font-size: 30px;
+  }
+  .contact-text {
+    font-size: 22px;
+  }
+  .contact-button {
+    height: 25px;
+    width: 100px;
+    font-size: 14px;
+  }
+}
