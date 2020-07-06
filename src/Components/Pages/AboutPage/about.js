@@ -13,7 +13,7 @@ export default class AboutPage extends Component {
     return (
       <div>
         <NavbarExport />
-        <div className="headerimage"></div>
+        <div className="about-page"></div>
         <Grid container>
           <Grid item>
             <AboutUsText />
