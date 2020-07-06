@@ -34,3 +34,19 @@
   margin-bottom: 20px;
   margin-left: 15%;
 }
+
+@media (max-width: 1059px) {
+  .form-box {
+    padding-top: 170px;
+  }
+}
+@media (max-width: 700px) {
+  .form-box {
+    padding-top: 170px;
+  }
+}
+@media (max-width: 600px) {
+  .form-box {
+    padding-top: 10%;
+  }
+}
