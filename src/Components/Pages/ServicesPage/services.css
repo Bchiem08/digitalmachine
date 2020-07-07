@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-html,
+html {
+  height: 100%;
+  overflow: auto;
+}
 body {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+  height: 100%;
 }
 .service-headerimage {
   background-image: url(../../../Backgrounds/servicepageheader.png);
