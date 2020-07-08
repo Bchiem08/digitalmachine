@@ -10,7 +10,7 @@ import ContactFooter2 from "../contactfooter2/contactfooter2";
 export default class HomePage extends Component {
   render() {
     return (
-      <div>
+      <div style={{ overflow: "hidden" }}>
         <NavBarExport />
         <div className="homepage">
           <div style={{ paddingBottom: "6%" }}>

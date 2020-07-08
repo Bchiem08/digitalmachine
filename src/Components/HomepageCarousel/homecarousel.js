@@ -22,7 +22,7 @@ export default class HomeCarousel extends Component {
           {photos.map((photo) => {
             return (
               <div key={photo}>
-                <img width="100%" src={photo.url} alt="map" />
+                <img width="100%" src={photo.url} alt="carousel" />
               </div>
             );
           })}
