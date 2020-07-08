@@ -1,13 +1,14 @@
 const functions = require("firebase-functions");
 const cors = require("cors");
 const sgMail = require("@sendgrid/mail");
+const SENDGRID_API_KEY = functions.config().sendgrid.key;
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.addMessage = functions.https.onCall((data, context) => {
   console.log(data.message);
-  sgMail.setApiKey(process.env.REACT_APP_SEND_GRID_API_KEY);
+  console.log(SENDGRID_API_KEY);
   const msg = {
     to: "digitalmachineltd@gmail.com",
     from: "text@example.com",
@@ -15,7 +16,7 @@ exports.addMessage = functions.https.onCall((data, context) => {
     text: "easy to do",
     html: "<strong>easy to do</strong>",
   };
-  sgMail.send(msg);
+  return sgMail.send(msg);
 });
 
 // const { Firstname, Lastname, email, phonenumber, message } = data.message;
