@@ -15,9 +15,18 @@ export default class ContactPageText extends Component {
         <p className="contact-body-address">
           5303 36 St NW, Edmonton, AB T6B 3R6
         </p>
-        <p className="contact-title-small">Tel: 780-440-9107</p>
-        <p className="contact-title-small">Fax:</p>
-        <p className="contact-title-small">Email:</p>
+        <p className="contact-title-small">
+          Tel:{" "}
+          <a href className="contact-body-address">
+            780-440-9107
+          </a>
+        </p>
+        <p className="contact-title-small">
+          Email:{" "}
+          <a href className="contact-body-address">
+            dmltd@digitalmachine.ca
+          </a>
+        </p>
         <p className="contact-title-small">
           Open weekdays from 8a.m.- 4:30p.m.
         </p>
