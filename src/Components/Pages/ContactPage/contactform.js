@@ -35,7 +35,6 @@ export default class ContactForm extends Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.state);
-    console.log(process.env.REACT_APP_SEND_GRID_API_KEY);
     sendMessageToServer(this.state)
       .then()
       .catch((error) => console.error(error));
