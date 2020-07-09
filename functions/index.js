@@ -35,7 +35,7 @@ exports.addMessage = functions.https.onCall((data, context) => {
   </div>`;
 
   const msg = {
-    to: functions.config().email.key,
+    to: functions.config().email.to,
     from: functions.config().email.key,
     subject: "Client Email",
     text: text,
