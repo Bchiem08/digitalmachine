@@ -13,7 +13,7 @@ exports.addMessage = functions.https.onCall((data, context) => {
   console.log(data.message);
   const SENDGRID_API_KEY = functions.config().sendgrid.key;
   sgMail.setApiKey(functions.config().sendgrid.key);
-  const { Firstname, Lastname, email, phonenumber, message } = data.message;
+  const { Firstname, Lastname, Email, Phonenumber, message } = data.message;
   const text = `<div>
   <h4>Email</H4>
    <ul>
@@ -23,20 +23,20 @@ exports.addMessage = functions.https.onCall((data, context) => {
     <li> Lastname - ${Lastname || ""}</li>
    </ul>
    <ul>
-   <li> email - ${email || ""}</li>
+   <li> Email - ${Email || ""}</li>
   </ul>
   <ul>
-  <li> Phonenumber - ${phonenumber || ""}</li>
+  <li> Phonenumber - ${Phonenumber || ""}</li>
  </ul>
  <ul>
- <h4>message</H4>
+ <h4>Message</H4>
  <p>  ${message || ""}</p>
 </ul>
   </div>`;
 
   const msg = {
-    to: "digitalmachineltd@gmail.com",
-    from: "digitalmachineltd@gmail.com",
+    to: functions.config().email.key,
+    from: functions.config().email.key,
     subject: "Client Email",
     text: text,
     html: text,

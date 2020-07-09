@@ -7,8 +7,8 @@ export default class ContactForm extends Component {
     this.state = {
       Firstname: "",
       Lastname: "",
-      email: "",
-      phonenumber: "",
+      Email: "",
+      Phonenumber: "",
       message: "",
     };
   }
@@ -26,7 +26,7 @@ export default class ContactForm extends Component {
   }
 
   onEmailChange(event) {
-    this.setState({ email: event.target.value });
+    this.setState({ Email: event.target.value });
   }
   onMessageChange(event) {
     this.setState({ message: event.target.value });
@@ -41,8 +41,8 @@ export default class ContactForm extends Component {
     this.setState({
       Firstname: "",
       Lastname: "",
-      email: "",
-      phonenumber: "",
+      Email: "",
+      Phonenumber: "",
       message: "",
     });
   }
@@ -78,22 +78,22 @@ export default class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email*</label>
+            <label htmlFor="Email">Email*</label>
             <input
               type="text"
               className="form-control"
               aria-describedby="emailHelp"
-              value={this.state.email}
+              value={this.state.Email}
               onChange={this.onEmailChange.bind(this)}
-              name="email"
+              name="Email"
               required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="phonenumber">Phone Number</label>
+            <label htmlFor="Phonenumber">Phone Number</label>
             <input
               type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
               className="form-name"
               value={this.state.phonenumber}
               onChange={this.onPhoneNumberChange.bind(this)}
