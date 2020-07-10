@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 .photospage-background {
-  background-image: url(../../../Backgrounds/nutsscreened.png);
+  background-image: url(../../../Backgrounds/photospage.png);
   width: 100%;
   max-height: 10000px;
   background-repeat: no-repeat;
