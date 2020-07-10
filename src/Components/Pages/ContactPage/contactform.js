@@ -59,6 +59,7 @@ export default class ContactForm extends Component {
             <label htmlFor="Firstname">First name*</label>
             <input
               type="text"
+              placeholder="first name"
               className="form-name"
               value={this.state.Firstname}
               onChange={this.onFirstnameChange.bind(this)}
@@ -70,6 +71,7 @@ export default class ContactForm extends Component {
             <label htmlFor="Lastname">Last name*</label>
             <input
               type="text"
+              placeholder="last name"
               className="form-name"
               value={this.state.Lastname}
               onChange={this.onLastnameChange.bind(this)}
@@ -81,6 +83,7 @@ export default class ContactForm extends Component {
             <label htmlFor="Email">Email*</label>
             <input
               type="text"
+              placeholder="email"
               className="form-control"
               aria-describedby="emailHelp"
               value={this.state.Email}
@@ -93,7 +96,7 @@ export default class ContactForm extends Component {
             <label htmlFor="Phonenumber">Phone Number</label>
             <input
               type="tel"
-              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              placeholder="phone number"
               className="form-name"
               value={this.state.phonenumber}
               onChange={this.onPhoneNumberChange.bind(this)}
@@ -104,6 +107,7 @@ export default class ContactForm extends Component {
             <label htmlFor="message">Message</label>
             <textarea
               type="text"
+              placeholder="type your message here"
               className="form-area"
               rows="5"
               value={this.state.message}
